@@ -1,4 +1,4 @@
-class FlashCard
+class FlashCard < ActveRecord::Base
   attr_reader :word, :definition, :pronunciation
   attr_accessor :usage
 

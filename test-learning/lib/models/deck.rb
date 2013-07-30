@@ -1,6 +1,6 @@
 # require_relative '../lib/flash_card'
 
-class Deck
+class Deck < ActveRecord::Base
   attr_accessor :name, :cards
   # Decks = [] 
 

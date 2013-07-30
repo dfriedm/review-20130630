@@ -1,4 +1,5 @@
-require_relative '../lib/flash_card'
+require_relative '../lib/models/deck'
+require_relative '../lib/models/flash_card'
 require 'test/unit'
 require 'minitest/pride'
 
