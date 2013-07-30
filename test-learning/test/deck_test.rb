@@ -21,7 +21,16 @@ class DeckTest < Test::Unit::TestCase
     assert_equal [card_one], deck_one.cards
   end
 
-  
+  def test_can_add_multiple_cards_to_deck
+    deck_one = Deck.new('Coding Vocab')
+    card_one = FlashCard.new('Ruby', 'A programming language')
+    card_two = FlashCard.new('Python', 'Different Language')
+    deck_one.add_card(card_one, card_two)
+    assert_equal [card_one, card_two], deck_one.cards
+  end
+
+
+
 
 #   def test_decks_have_cards # too much going on here
 #     deck_one = Deck.new('Coding Vocab')

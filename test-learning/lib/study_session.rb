@@ -15,11 +15,15 @@ class StudySession
     @deck = deck
   end
 
-  def draw_card
-    deck.cards.pop
+  def draw_card()
+    card = deck.cards.pop
+    deck.cards.unshift(card)
+    card
   end
 
 
+
 end
+
 
 

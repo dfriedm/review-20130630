@@ -1,3 +1,5 @@
+# require_relative '../lib/flash_card'
+
 class Deck
   attr_accessor :name, :cards
   # Decks = [] 
@@ -11,8 +13,9 @@ class Deck
   #   cards.select{|card| card.key(attribute)}
   # end
 
-  def add_card(card)
+  def add_card(*card)
     cards << card
+    cards.flatten!
   end
 
   # shuffle, reset, next
