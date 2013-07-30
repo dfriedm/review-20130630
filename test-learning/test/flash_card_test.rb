@@ -15,14 +15,17 @@ class FlashCardTest < Test::Unit::TestCase
     card = FlashCard.new('Ruby', 'A programming language',"sounds like it's spelled")
     assert_equal card.word, "Ruby"
   end
+  # exepected then actual
 
   def test_flashcards_word_has_definition 
     card = FlashCard.new('Ruby', 'A programming language',"sounds like it's spelled")
     assert_equal card.definition, 'A programming language'
   end
 
-  def test_flashcards_word_has_pronunciation
+  def test_flashcards_word_has_optional_pronunciation
+    card = FlashCard.new('Ruby', 'A programming language')
     card = FlashCard.new('Ruby', 'A programming language',"sounds like it's spelled")
+    assert card
     assert_equal card.pronunciation, "sounds like it's spelled"
   end  
 

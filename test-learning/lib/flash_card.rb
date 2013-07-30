@@ -2,8 +2,10 @@ class FlashCard
   attr_reader :word, :definition, :pronunciation
   attr_accessor :usage
 
+  # CardPool =
 
-  def initialize(word, definition, pronunciation)
+
+  def initialize(word, definition, pronunciation=nil)
     @definition = definition
     @word = word
     @pronunciation = pronunciation
@@ -13,6 +15,12 @@ class FlashCard
     {:word => word, :definition => definition, :pronunciation => pronunciation, :usage => usage}
   end
 
+
+  # add datestudied to the array of cards
+  # container for all cards
+  # access all cards
+
+  # 
 
 
 end
