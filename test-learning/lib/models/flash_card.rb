@@ -1,4 +1,6 @@
-class FlashCard < ActveRecord::Base
+require './environment'
+
+class FlashCard < ActiveRecord::Base
   attr_reader :word, :definition, :pronunciation
   attr_accessor :usage
 

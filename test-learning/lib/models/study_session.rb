@@ -7,7 +7,9 @@
 # flashcard_app.rb -> make the main
 # start, exit, settings, build a deck vs test... etc
 
-class StudySession < ActveRecord::Base
+require './environment'
+
+class StudySession < ActiveRecord::Base
 
   attr_reader :deck
 

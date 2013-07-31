@@ -1,8 +1,9 @@
-require_relative '../lib/models/deck'
-require_relative '../lib/models/flash_card'
+# require_relative '../lib/models/deck'
+# require_relative '../lib/models/flash_card'
+# require_relative '../lib/models/study_session'
 require 'test/unit'
 require 'minitest/pride'
-
+require './environment'
 class DeckTest < Test::Unit::TestCase
 
   def test_creates_a_deck
