@@ -1,1 +1,12 @@
-require './app'
+require_relative './lib/flash_card_app'
+
+namespace :tests do
+
+  desc "run each test in the flash_card_app/test/ directory"
+  task :runall do
+    Dir["./test/*.rb"].each do |file|
+      `ruby file`
+    end
+  end
+
+end

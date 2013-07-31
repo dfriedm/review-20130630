@@ -1,2 +1,2 @@
-require 'environment'
+require_relative '../environment'
 

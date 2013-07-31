@@ -27,5 +27,4 @@ ActiveRecord::Migration.create_table :flash_cards do |t|
   t.string :pronunciation
   t.string :usage
   t.integer :deck_id
-
 end
