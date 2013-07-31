@@ -19,12 +19,5 @@ ActiveRecord::Base.establish_connection(
   :database => 'flash_card_app.db'
 )
 
-
  
-ActiveRecord::Migration.create_table :flash_cards do |t|
-  t.string :word
-  t.string :definition
-  t.string :pronunciation
-  t.string :usage
-  t.integer :deck_id
-end
+
