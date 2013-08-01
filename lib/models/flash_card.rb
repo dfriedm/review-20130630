@@ -1,18 +1,10 @@
 require './environment'
 
 class FlashCard < ActiveRecord::Base
-  attr_reader :word, :definition, :pronunciation
-  attr_accessor :usage
 
-  # CardPool =
-
-
-  # def initialize(word, definition, pronunciation=nil)
-  #   @definition = definition
-  #   @word = word
-  #   @pronunciation = pronunciation
-  # end
-
+  attr_accessible :word, :definition, :pronunciation
+  has_many :decks, through: :decks_study_sessions
+  
   def info
     {:word => word, :definition => definition, :pronunciation => pronunciation, :usage => usage}
   end
@@ -21,8 +13,5 @@ class FlashCard < ActiveRecord::Base
   # add datestudied to the array of cards
   # container for all cards
   # access all cards
-
-  # 
-
 
 end

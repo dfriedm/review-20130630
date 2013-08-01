@@ -10,22 +10,11 @@ require_relative '../../environment'
 class StudySession < ActiveRecord::Base
 
   attr_accessor :deck, :active, :studied
-
   attr_reader :deck
 
-  # def initialize(deck)
-  #   @deck = deck
-  #   # active = []
-  #   # studied = []
-  # end
-
-
-#creat attr_accessor n pass initialze things as a hash
 
   def draw_card(some_cards=1)
     xx = deck.cards.take(some_cards)
-    # deck.cards.unshift(drawn)
-    # draw a card and make inactive
   end
 
 

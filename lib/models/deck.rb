@@ -1,18 +1,10 @@
-# require_relative '../lib/flash_card'
 require './environment'
 
 class Deck < ActiveRecord::Base
-  # attr_accessor :name, :cards
-  # Decks = [] 
+  
+  attr_accessible :name, :cards
+  has_many :flash_cards
 
-  # def initialize(name=nil)
-  #   @name = name
-  #   @cards = []
-  # end
-
-  # def word(attribute)
-  #   cards.select{|card| card.key(attribute)}
-  # end
 
   def add_card(*card)
     cards << card
