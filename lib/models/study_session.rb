@@ -5,7 +5,7 @@
 # flashcard_app.rb -> make the main
 # start, exit, settings, build a deck vs test... etc
 
-require_relative '../../environment'
+# require_relative '../../environment'
 
 class StudySession < ActiveRecord::Base
 

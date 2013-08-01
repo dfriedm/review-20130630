@@ -1,4 +1,4 @@
-require_relative '../../environment'
+# require_relative '../../environment'
 # Usng AR to create a table
 # ActiveRecord::Migration.create_table :flash_cards do |t|
 #   t.string :word

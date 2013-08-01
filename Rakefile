@@ -1,4 +1,4 @@
-require_relative './lib/flash_card_app'
+# require_relative './lib/flash_card_app'
 
 namespace :tests do
   desc "run each test in the flash_card_app/test/ directory"

@@ -1,4 +1,4 @@
-require './environment'
+# require './environment'
 
 class Deck < ActiveRecord::Base
   

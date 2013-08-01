@@ -1,4 +1,4 @@
-require './environment'
+# require './environment'
 
 class DeckStudySession < ActiveRecord::Base
   attr_accessible :deck_id, :flash_card_id
