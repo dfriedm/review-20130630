@@ -1,3 +1,4 @@
+require_relative '../../environment'
 # Usng AR to create a table
 # ActiveRecord::Migration.create_table :flash_cards do |t|
 #   t.string :word
@@ -18,10 +19,14 @@ class CreateFlashCardsTable < ActiveRecord::Migration
       t.string :usage
       t.integer :deck_id
     end
-  end
+    puts 'ran up method'
+  end 
 
   def down
     drop_table :flash_cards
+    puts 'ran down method'
   end
 
 end
+
+# ruby file,.. CreateFlashCardsTable.down

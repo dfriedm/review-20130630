@@ -53,11 +53,14 @@ class StudySessionTest < Test::Unit::TestCase
     card_four = FlashCard.new('C', 'a big ol monster')
     deck_one.add_card(card_one, card_two, card_three, card_four)
     session = StudySession.new(deck_one)
-    assert session.draw_random(2)
-    assert_not_equal 
+    assert session.randomly_draw(2)
+    # assert_not_equal 
   end
 
+
+# study sessions should be able to initialie with many decks
   # discard in active or inactive, on card or deck
+
 
 
 

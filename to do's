@@ -1,0 +1,5 @@
+create migrations for each of the other models
+
+flesh out other methods
+
+begin building out the runtime in flash_card_app.rb
