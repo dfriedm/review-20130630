@@ -1,8 +1,8 @@
 require 'sqlite3'
 require 'active_record'
-require_relative './lib/models/deck'
-require_relative './lib/models/flash_card'
-require_relative './lib/models/study_session'
+# require_relative './lib/models/deck'
+# require_relative './lib/models/flash_card'
+# require_relative './lib/models/study_session'
 
 
 

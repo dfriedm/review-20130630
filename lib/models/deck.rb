@@ -2,13 +2,13 @@
 require './environment'
 
 class Deck < ActiveRecord::Base
-  attr_accessor :name, :cards
+  # attr_accessor :name, :cards
   # Decks = [] 
 
-  def initialize(name=nil)
-    @name = name
-    @cards = []
-  end
+  # def initialize(name=nil)
+  #   @name = name
+  #   @cards = []
+  # end
 
   # def word(attribute)
   #   cards.select{|card| card.key(attribute)}

@@ -7,11 +7,11 @@ class FlashCard < ActiveRecord::Base
   # CardPool =
 
 
-  def initialize(word, definition, pronunciation=nil)
-    @definition = definition
-    @word = word
-    @pronunciation = pronunciation
-  end
+  # def initialize(word, definition, pronunciation=nil)
+  #   @definition = definition
+  #   @word = word
+  #   @pronunciation = pronunciation
+  # end
 
   def info
     {:word => word, :definition => definition, :pronunciation => pronunciation, :usage => usage}
