@@ -1,7 +1,10 @@
 class StudySession < ActiveRecord::Base
+  # has_many :deck_ids, through: :decks_study_sessions
 
-  attr_accessor :deck, :active, :studied
-  attr_reader :deck
+  attr_accessible :decks, :active, :studied, :name
+  attr_accessor :decks
+
+  # def deck=()
 
 
   def draw_card(some_cards=1)
