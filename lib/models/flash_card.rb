@@ -1,5 +1,3 @@
-# require './environment'
-
 class FlashCard < ActiveRecord::Base
 
   # attr_accessible :word, :definition, :pronunciation
