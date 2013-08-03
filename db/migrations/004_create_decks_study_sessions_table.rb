@@ -1,4 +1,4 @@
-# require_relative '../../environment'
+require_relative '../../environment'
 
 class CreateDecksStudySessionsTable < ActiveRecord::Migration
 
@@ -16,3 +16,7 @@ class CreateDecksStudySessionsTable < ActiveRecord::Migration
   end
 
 end
+
+
+# CreateDecksStudySessionsTable.migrate(:up)
+CreateDecksStudySessionsTable.migrate(ARGV[0])

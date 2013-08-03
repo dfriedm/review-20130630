@@ -29,4 +29,4 @@ class CreateFlashCardsTable < ActiveRecord::Migration
 
 end
 
-# ruby file,.. CreateFlashCardsTable.down
+CreateFlashCardsTable.migrate(ARGV[0])

@@ -12,3 +12,5 @@ class CreateStudySessionsTable < ActiveRecord::Migration
     drop_table :study_sessions
   end
 end
+
+CreateStudySessionsTable.migrate(ARGV[0])

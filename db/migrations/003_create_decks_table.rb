@@ -15,3 +15,5 @@ class CreateDecksTable < ActiveRecord::Migration
   end
 
 end
+
+CreateDecksTable.migrate(ARGV[0])

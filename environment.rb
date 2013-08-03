@@ -5,6 +5,7 @@ require 'active_record'
 # require_relative './lib/models/study_session'
 
 
+#recursively requires all files in ./lib and down that end in .rb
 Dir.glob('./lib/*').each do |folder|
   Dir.glob(folder +"/*.rb").each do |file|
     require file
