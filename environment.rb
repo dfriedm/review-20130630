@@ -21,4 +21,4 @@ ActiveRecord::Base.establish_connection(
 
  
 
-created deck_study_session model, wired associations, removed model initializations, cleaning for active_record
+# created deck_study_session model, wired associations, removed model initializations, cleaning for active_record

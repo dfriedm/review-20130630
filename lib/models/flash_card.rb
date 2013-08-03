@@ -2,7 +2,8 @@
 
 class FlashCard < ActiveRecord::Base
 
-  attr_accessible :word, :definition, :pronunciation
+  # attr_accessible :word, :definition, :pronunciation
+  attr_accessor :word, :definition, :pronunciation
   has_many :decks, through: :decks_study_sessions
   
   def info

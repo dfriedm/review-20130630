@@ -1,6 +1,6 @@
-# require_relative '../lib/models/deck'
-# require_relative '../lib/models/flash_card'
-# require_relative '../lib/models/study_session'
+require_relative '../lib/models/deck'
+require_relative '../lib/models/flash_card'
+require_relative '../lib/models/study_session'
 require 'test/unit'
 require 'minitest/pride'
 # require './environment'
@@ -11,21 +11,21 @@ class DeckTest < Test::Unit::TestCase
   end
 
   def test_decks_know_their_name
-    deck_one = Deck.new('Coding Vocab')
+    deck_one = Deck.new(name: 'Coding Vocab')
     assert_equal 'Coding Vocab', deck_one.name
   end
 
   def test_can_add_cards_to_deck
-    deck_one = Deck.new('Coding Vocab')
-    card_one = FlashCard.new('Ruby', 'A programming language')
+    deck_one = Deck.new(name: 'Coding Vocab')
+    card_one = FlashCard.new(word: 'Ruby', definition: 'A programming language')
     deck_one.add_card(card_one)
     assert_equal [card_one], deck_one.cards
   end
 
   def test_can_add_multiple_cards_to_deck
-    deck_one = Deck.new('Coding Vocab')
-    card_one = FlashCard.new('Ruby', 'A programming language')
-    card_two = FlashCard.new('Python', 'Different Language')
+    deck_one = Deck.new(name: 'Coding Vocab')
+    card_one = FlashCard.new(word: 'Ruby', definition: 'A programming language')
+    card_two = FlashCard.new(word: 'Python', definition: 'Different Language')
     deck_one.add_card(card_one, card_two)
     assert_equal [card_one, card_two], deck_one.cards
   end
