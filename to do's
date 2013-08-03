@@ -1,3 +1,12 @@
+today:
+1 get sessions tests to pass
+2 add seed data (cn flashcards)
+3 flesh out sessions tdd - need study methods, spaced rep etc
+4 flesh out cards tdd
+
+
+
+-----------------------------------
 create migrations for each of the other models
 
 flesh out other methods
