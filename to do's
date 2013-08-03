@@ -2,4 +2,27 @@ create migrations for each of the other models
 
 flesh out other methods
 
-begin building out the runtime in flash_card_app.rb
+begin building out the runtime in flash_card_app.rb\
+
+
+for study session:
+# make a study session class
+# study methods: all, shuffle, ordered, alphabetical, spaced repitition
+# spaced repitition gets long medium and short times--- maybe it's own class, marked as known, not known
+
+# flashcard_app.rb -> make the main
+# start, exit, settings, build a deck vs test... etc
+
+# require_relative '../../environment'
+------
+
+
+for deck:
+ # shuffle, reset, next
+
+  # card_studied, studied today
+  # active, inactive?, plus days
+
+  # set study session repitition- when due next
+  # scheduler
+  # start thinking about end point and

@@ -1,13 +1,9 @@
-require_relative '../lib/models/deck'
-require_relative '../lib/models/flash_card'
-require_relative '../lib/models/study_session'
-# require './environment'
+# require_relative '../lib/models/deck'
+# require_relative '../lib/models/flash_card'
+# require_relative '../lib/models/study_session'
+require './environment'
 require 'test/unit'
 require 'minitest/pride'
-
-############################################################
-# tests shouldn't test implementation, just what's returning
-############################################################
 
 class FlashCardTest < Test::Unit::TestCase
 

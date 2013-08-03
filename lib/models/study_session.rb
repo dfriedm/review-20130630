@@ -1,12 +1,3 @@
-# make a study session class
-# study methods: all, shuffle, ordered, alphabetical, spaced repitition
-# spaced repitition gets long medium and short times--- maybe it's own class, marked as known, not known
-
-# flashcard_app.rb -> make the main
-# start, exit, settings, build a deck vs test... etc
-
-# require_relative '../../environment'
-
 class StudySession < ActiveRecord::Base
 
   attr_accessor :deck, :active, :studied
@@ -22,14 +13,4 @@ class StudySession < ActiveRecord::Base
     deck.cards.sample(amount)
   end
 
-
-
 end
-
-# sessions
-# card table
-# deck table
-
-# testdeck = Deck.new("My Name is TESTDECK")
-# session1 = StudySession.new(testdeck)
-# session1.save

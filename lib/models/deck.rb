@@ -1,4 +1,4 @@
-require './environment'
+# require './environment'
 
 class Deck < ActiveRecord::Base
   
@@ -15,14 +15,5 @@ class Deck < ActiveRecord::Base
     cards << card
     cards.flatten!
   end
-
-  # shuffle, reset, next
-
-  # card_studied, studied today
-  # active, inactive?, plus days
-
-  # set study session repitition- when due next
-  # scheduler
-  # start thinking about end point and
 
 end
